@@ -1,0 +1,123 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  
+  background: linear-gradient(135deg, #FFDBC3 0%, #FFF5E0 100%); 
+  z-index: 1;  
+}
+
+.app-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* La imagen del álbum va aquí */
+  background-image: var(--bg-album-image, none);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  filter: blur(25px) brightness(0.7); 
+  opacity: 0.3; 
+  z-index: -1; 
+
+
+  transition: opacity 0.7s ease-in-out, filter 0.7s ease-in-out, background-image 0.7s ease-in-out;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.album-info-area {
+  position: relative;
+  top: unset;
+  left: unset;
+  transform: unset;
+  margin-top: 5vh;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  z-index: 15;
+  padding: 0 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.vinyl-player-area {
+  position: relative;
+  bottom: unset;
+  left: unset;
+  transform: unset;
+  width: 100%;
+  max-width: 1200px;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 10;
+  padding-bottom: 5vh;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.loading-screen,
+.error-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.5em;
+  color: #555;
+  text-align: center;
+}
+
+/* Responsividad :)*/
+@media (max-width: 768px) {
+  .album-info-area {
+    margin-top: 2vh;
+    width: 95%;
+    max-width: none;
+  }
+
+  .vinyl-player-area {
+    height: 55vh;
+    padding-bottom: 3vh;
+  }
+
+  .app-container::before {
+    filter: blur(15px); 
+    opacity: 0.4; 
+  }
+}
+
+@media (max-width: 480px) {
+  .album-info-area {
+    margin-top: 1vh;
+    width: 98%;
+  }
+
+  .vinyl-player-area {
+    height: 50vh;
+    padding-bottom: 2vh;
+  }
+
+  .app-container::before {
+    filter: blur(10px); 
+    opacity: 0.3;
+  }
+}

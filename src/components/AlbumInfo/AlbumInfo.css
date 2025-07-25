@@ -1,0 +1,130 @@
+.album-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF5E0; 
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(25, 9, 51, 0.12); 
+  max-width: 480px;
+  width: 90%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto hover para la card */
+.album-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(25, 9, 51, 0.18); 
+}
+
+.album-info-cover {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(25, 9, 51, 0.15); 
+  border: 4px solid #EE9E8E; 
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.album-info-card:hover .album-info-cover {
+  transform: scale(1.02);
+}
+
+.album-info-title {
+  font-size: 2em;
+  font-weight: 700;
+  color: #190933; 
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.album-info-artist {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #5C4A6F; 
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+.album-info-description {
+  font-size: 1em;
+  color: #7B6E8A; 
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 380px;
+}
+
+.album-info-link {
+  display: inline-block;
+  background-color: #EE9E8E; /* Rosa Durazno para el botón */
+  color: #190933; /* Texto oscuro para contraste */
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(238, 158, 142, 0.4);
+}
+
+.album-info-link:hover {
+  background-color: #FFDBC3; 
+  transform: translateY(-2px);
+  color: #190933; 
+  box-shadow: 0 6px 15px rgba(255, 219, 195, 0.6); 
+}
+
+/* responsividad :) */
+@media (max-width: 768px) {
+  .album-info-card {
+    padding: 25px;
+    width: 95%;
+    max-width: none;
+  }
+  .album-info-cover {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+  .album-info-title {
+    font-size: 1.6em;
+  }
+  .album-info-artist {
+    font-size: 1.1em;
+  }
+  .album-info-description {
+    font-size: 0.9em;
+  }
+  .album-info-link {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .album-info-card {
+    padding: 20px;
+  }
+  .album-info-cover {
+    width: 100px;
+    height: 100px;
+  }
+  .album-info-title {
+    font-size: 1.4em;
+  }
+  .album-info-artist {
+    font-size: 1em;
+  }
+  .album-info-description {
+    font-size: 0.85em;
+  }
+}

@@ -1,0 +1,125 @@
+.header {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  box-sizing: border-box;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #333;
+  font-weight: 700;
+  display: flex; 
+  align-items: baseline; 
+  gap: 8px; 
+}
+
+.github-user {
+  font-size: 0.5em; 
+  color: #7A7A7A; 
+  font-weight: 400; 
+  opacity: 0.8; 
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu li {
+  font-size: 1.1em;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li:hover {
+  color: #000;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 19;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-menu li {
+    font-size: 1.2em;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .logo h1 {
+    font-size: 1.5em; /*móviles */
+    gap: 5px; 
+  }
+
+  .github-user {
+    font-size: 0.6em; 
+  }
+}

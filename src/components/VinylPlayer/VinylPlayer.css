@@ -1,0 +1,143 @@
+.vinyl-player-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  overflow: visible;
+}
+
+.vinyl {
+
+  width: 60vh; /* Ajuste para que el vinilo sea más grande pero responsiveee */
+  height: 60vh;
+  max-width: 500px; /* Limitar el tamaño máximo en pantallas grandes */
+  max-height: 500px; /* Limitar el tamaño máximo en pantallas grandes */
+
+  background: radial-gradient(circle at 35% 35%, #333, #111);
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5), 0 20px 60px rgba(0, 0, 0, 0.3);
+  cursor: grab;
+  z-index: 10;
+  touch-action: none;
+}
+
+.vinyl:active {
+  cursor: grabbing;
+}
+
+.vinyl-center {
+  width: 20%;
+  height: 20%;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #aaa;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.vinyl-center::after {
+  content: '';
+  width: 25%;
+  height: 25%;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vinyl-grooves {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      transparent 80px,
+      rgba(0, 0, 0, 0.1) 85px,
+      transparent 90px,
+      rgba(0, 0, 0, 0.1) 95px,
+      transparent 100px,
+      rgba(0, 0, 0, 0.1) 105px,
+      transparent 110px,
+      rgba(0, 0, 0, 0.1) 115px,
+      transparent 120px,
+      rgba(0, 0, 0, 0.1) 125px,
+      transparent 130px,
+      rgba(0, 0, 0, 0.1) 135px,
+      transparent 140px,
+      rgba(0, 0, 0, 0.1) 145px,
+      transparent 150px,
+      rgba(0, 0, 0, 0.1) 155px,
+      transparent 160px,
+      rgba(0, 0, 0, 0.1) 165px,
+      transparent 170px,
+      rgba(0, 0, 0, 0.1) 175px,
+      transparent 180px,
+      rgba(0, 0, 0, 0.1) 185px,
+      transparent 190px,
+      rgba(0, 0, 0, 0.1) 195px,
+      transparent 200px,
+      rgba(0, 0, 0, 0.1) 205px,
+      transparent 210px,
+      rgba(0, 0, 0, 0.1) 215px,
+      transparent 220px,
+      rgba(0, 0, 0, 0.1) 225px,
+      transparent 230px,
+      rgba(0, 0, 0, 0.1) 235px,
+      transparent 240px,
+      rgba(0, 0, 0, 0.1) 245px,
+      transparent 250px
+    );
+}
+
+.album-cover-wrapper {
+  position: absolute;
+}
+
+
+.drag-indicator {
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9em;
+  color: #888;
+  text-align: center;
+  z-index: 1;
+  white-space: nowrap;
+  padding-bottom: 10px; 
+}
+
+.drag-arrow {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 5px;
+  animation: bounce 1.5s infinite;
+}
+
+/* Media queries para responsividad :))))) */
+
+@media (max-width: 768px) {
+  .vinyl {
+    width: 50vh; /*tablets*/
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .vinyl {
+    width: 40vh; /*cels*/
+    height: 40vh;
+  }
+}
