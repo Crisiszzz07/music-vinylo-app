@@ -1,3 +1,4 @@
+// App.tsx
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'; 
@@ -52,8 +53,10 @@ function HomePageContent({ albums, selectedAlbumIndex, setSelectedAlbumIndex, ge
         {albums.length > 0 && (
           <VinylPlayer
             albums={albums}
+            // Start at index 1 to avoid the first album if there's more than one
+            // If only one album, still use 0
             onAlbumChange={setSelectedAlbumIndex}
-            initialIndex={selectedAlbumIndex}
+            initialIndex={albums.length > 1 ? 1 : 0} // Start at 1 if possible, else 0
           />
         )}
       </div>
@@ -64,7 +67,7 @@ function HomePageContent({ albums, selectedAlbumIndex, setSelectedAlbumIndex, ge
 // maneja la carga de datos y las rutas
 function AppContent() {
   const [albums, setAlbums] = useState<Album[]>([]);
-  const [selectedAlbumIndex, setSelectedAlbumIndex] = useState(0);
+  const [selectedAlbumIndex, setSelectedAlbumIndex] = useState(0); // This will still refer to the actual index in the 'albums' array
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -131,10 +134,14 @@ function AppContent() {
         const uniqueAlbums = Array.from(new Map(fetchedAlbums.map(item => [item['mbid'], item])).values());
         
         if (uniqueAlbums.length === 0) {
-            setError('No se encontraron álbumes. Intenta recargar o verifica la API Key.');
-        } else {
-            setAlbums(uniqueAlbums);
-        }
+  setError('No se encontraron álbumes. Intenta recargar o verifica la API Key.');
+} else {
+  setAlbums(uniqueAlbums);
+  // Comenzar con el segundo álbum si hay más de 1, o el primero si solo hay 1
+  const initialIndex = uniqueAlbums.length > 1 ? 1 : 0;
+  setSelectedAlbumIndex(initialIndex);
+  console.log(`Initial album index set to: ${initialIndex}`);
+}
 
       } catch (err) {
         console.error("Error fetching data from Last.fm:", err);

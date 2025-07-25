@@ -141,3 +141,13 @@
     height: 40vh;
   }
 }
+
+.album-cover-wrapper.album-0 {
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  will-change: transform;
+}
+
+.album-cover-wrapper.album-0 .album-cover-container {
+  transform: translateZ(1px);
+}

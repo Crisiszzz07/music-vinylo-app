@@ -13,7 +13,6 @@ const AlbumCover: React.FC<AlbumCoverProps> = ({ album, style }) => {
     const smallImage = images.find(img => img.size === 'small');
     const mediumImage = images.find(img => img.size === 'medium');
     const largeImage = images.find(img => img.size === 'large');
-
     return smallImage?.['#text'] || mediumImage?.['#text'] || largeImage?.['#text'] || '';
   };
 
@@ -22,10 +21,18 @@ const AlbumCover: React.FC<AlbumCoverProps> = ({ album, style }) => {
   return (
     <motion.div
       className="album-cover-container"
-      style={style}
+      style={{
+        ...style,
+        width: style?.width || '100px',
+        height: style?.height || '100px',
+      }}
     >
       {imageUrl ? (
-        <img src={imageUrl} alt={album.name} className="album-cover-image" />
+        <img
+          src={imageUrl}
+          alt={album.name}
+          className="album-cover-image"
+        />
       ) : (
         <div className="album-cover-placeholder">
           {album.name}
@@ -40,5 +47,6 @@ const AlbumCover: React.FC<AlbumCoverProps> = ({ album, style }) => {
     </motion.div>
   );
 };
+
 
 export default AlbumCover;

@@ -1,7 +1,6 @@
 .album-cover-container {
   position: absolute;
-  width: 100px; 
-  height: 100px;
+  /* El width y height se establecerán desde VinylPlayer.tsx usando style prop */
   background-color: #f0f0f0;
   border-radius: 8px;
   overflow: hidden;
@@ -14,11 +13,11 @@
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform-origin: center;
-  z-index: 2; /* Asegura que el cover esté por encima de otros elementos */
+  z-index: 2;
 }
 
 .album-cover-container.selected {
-  z-index: 10; 
+  z-index: 10;
 }
 
 .album-cover-image {
@@ -49,19 +48,19 @@
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
   font-size: 0.7em;
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.3s ease;
   box-sizing: border-box;
 }
 
 .album-cover-container:hover .album-cover-text {
-  opacity: 1; /* al pasar el mouse */
+  opacity: 1;
 }
 
 .album-cover-artist {
   margin: 0;
   font-weight: 600;
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
@@ -76,12 +75,12 @@
   width: 100%;
 }
 
-/* responsividad */
 @media (max-width: 768px) {
-  .album-cover-container {
-    width: 80px; 
-    height: 80px;
-  }
+
+  /* .album-cover-container {
+    width: 60px;
+    height: 60px;
+  } */
   .album-cover-text {
     font-size: 0.6em;
     padding: 3px;
@@ -89,11 +88,11 @@
 }
 
 @media (max-width: 480px) {
-  .album-cover-container {
-    width: 60px;
-    height: 60px;
-    border-radius: 5px; 
-  }
+  /* .album-cover-container {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+  } */
   .album-cover-text {
     font-size: 0.5em;
   }
