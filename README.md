@@ -1,6 +1,11 @@
 
 # 🎵 Music Vinylo App
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Crisiszzz07/face-recognizer-ES-.svg?style=social)](https://github.com/Crisiszzz07/face-recognizer-ES-/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Crisiszzz07/face-recognizer-ES-.svg?style=social)](https://github.com/Crisiszzz07/face-recognizer-ES-/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/Crisiszzz07/face-recognizer-ES-.svg)](https://github.com/Crisiszzz07/face-recognizer-ES-/issues)
+
 Welcome to **Music Vinylo**, a dynamic and interactive web application designed to explore music albums with a unique vinyl-player inspired interface. This project aims to blend engaging UI/UX with modern web technologies, making it a perfect showcase for a development portfolio.
 
 ---
@@ -53,7 +58,7 @@ Welcome to **Music Vinylo**, a dynamic and interactive web application designed 
 1. Clone the repository:
 
     ```bash
-    git clone [https://github.com/your-username/music-vinylo-app.git](https://github.com/your-username/music-vinylo-app.git)
+    git clone git@github.com:Crisiszzz07/music-vinylo-app.git
     cd music-vinylo-app
     ```
 
@@ -100,7 +105,7 @@ This project is open source and available under the [MIT License](https://www.go
 
 ## 📞 Contact
 
-* **Your Name** - [Your GitHub Profile](https://www.google.com/search?q=https://github.com/your-username)
+* **GitHub** - [Cristy](https://github.com/Crisiszzz07)
 
 ---
 
@@ -137,18 +142,14 @@ Bienvenido a **Music Vinylo**, una aplicación web dinámica e interactiva dise�
 ## 🛠️ Tecnologías Utilizadas
 
 * **Frontend:**
-    \*
-    \<img src="<https://www.google.com/url?sa=E\&source=gmail\&q=https://img.shields.io/badge/React-20232A?style=for-the-badge%26logo=react%26logoColor=61DAFB>" alt="React" width="80"/\>
-    \*
-    \<img src="<https://www.google.com/url?sa=E\&source=gmail\&q=https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge%26logo=typescript%26logoColor=white>" alt="TypeScript" width="80"/\>
-    \*
-    \<img src="<https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge\&logo=framer\&logoColor=white>" alt="Framer Motion" width="80"/\>
-  * \<img src="<https://www.google.com/url?sa=E\&source=gmail\&q=https://img.shields.io/badge/Vite-646CFF?style=for-the-badge%26logo=vite%26logoColor=white>" alt="Vite" width="80"/\> (Herramienta de Construcción)
-  * \<img src="<https://www.google.com/url?sa=E\&source=gmail\&q=https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge%26logo=html5%26logoColor=white>" alt="HTML5" width="80"/\>
-  * \<img src="<https://www.google.com/url?sa=E\&source=gmail\&q=https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge%26logo=css3%26logoColor=white>" alt="CSS3" width="80"/\>
+  * <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" width="80"/>
+  * <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" width="80"/>
+  * <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" width="80"/>
+  * <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" width="80"/> (Build Tool)
+  * <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" width="80"/>
+  * <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" width="80"/>
 * **API:**
-    \*
-    \<img src="<https://www.google.com/url?sa=E\&source=gmail\&q=https://img.shields.io/badge/Last.fm-D51007?style=for-the-badge%26logo=lastdotfm%26logoColor=white>" alt="Last.fm API" width="80"/\>
+  * <img src="https://img.shields.io/badge/Last.fm-D51007?style=for-the-badge&logo=lastdotfm&logoColor=white" alt="Last.fm API" width="80"/>
 
 ---
 
@@ -164,7 +165,7 @@ Bienvenido a **Music Vinylo**, una aplicación web dinámica e interactiva dise�
 1. Clona el repositorio:
 
     ```bash
-    git clone [https://github.com/tu-usuario/music-vinylo-app.git](https://github.com/tu-usuario/music-vinylo-app.git)
+    git clone git@github.com:Crisiszzz07/music-vinylo-app.git
     cd music-vinylo-app
     ```
 
@@ -211,4 +212,4 @@ Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](ht
 
 ## 📞 Contacto
 
-* **Cristy** - [Tu Perfil de GitHub](https://www.google.com/search?q=https://github.com/tu-usuario)
+* **GitHub** - [Cristy](https://github.com/Crisiszzz07)
