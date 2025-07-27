@@ -6,7 +6,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/Crisiszzz07/face-recognizer-ES-.svg?style=social)](https://github.com/Crisiszzz07/face-recognizer-ES-/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/Crisiszzz07/face-recognizer-ES-.svg)](https://github.com/Crisiszzz07/face-recognizer-ES-/issues)
 
-Welcome to **Music Vinylo**, a dynamic and interactive web application designed to explore music albums with a unique vinyl-player inspired interface. This project aims to blend engaging UI/UX with modern web technologies, making it a perfect showcase for a development portfolio.
+Welcome to **Music Vinylo**, a dynamic and interactive web application designed to explore music albums with a unique vinyl-player inspired interface. This project aims to blend engaging UI/UX with modern web technologies.
 
 ---
 
@@ -113,7 +113,7 @@ This project is open source and available under the [MIT License](https://www.go
 
 # 🎵 Aplicación Music Vinylo
 
-Bienvenido a **Music Vinylo**, una aplicación web dinámica e interactiva diseñada para explorar álbumes de música con una interfaz única inspirada en un tocadiscos de vinilo. Este proyecto busca combinar una interfaz de usuario atractiva con tecnologías web modernas, convirtiéndolo en un escaparate perfecto para un portafolio de desarrollo.
+Bienvenido a **Music Vinylo**, una aplicación web dinámica e interactiva diseñada para explorar álbumes de música con una interfaz única inspirada en un tocadiscos de vinilo. Este proyecto busca combinar una interfaz de usuario atractiva con tecnologías web modernas.
 
 ---
 
